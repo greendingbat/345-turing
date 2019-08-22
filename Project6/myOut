@@ -1,0 +1,43 @@
+--------------------
+Running the first time, without debug.
+--------------------
+0101010
+^   state: start
+xxxxxxx.
+       ^   state: searchingForMatchingOne
+
+MACHINE REJECTS!
+
+--------------------
+Running again, with debug turned on.
+--------------------
+0101010
+^   state: start
+x101010
+ ^   state: searchingForMatchingOne
+xi01010
+^   state: rewinding
+xi01010
+ ^   state: start
+xx01010
+  ^   state: start
+xxx1010
+   ^   state: searchingForMatchingOne
+xxxi010
+  ^   state: rewinding
+xxxi010
+   ^   state: start
+xxxx010
+    ^   state: start
+xxxxx10
+     ^   state: searchingForMatchingOne
+xxxxxi0
+    ^   state: rewinding
+xxxxxi0
+     ^   state: start
+xxxxxx0
+      ^   state: start
+xxxxxxx.
+       ^   state: searchingForMatchingOne
+
+MACHINE REJECTS!
